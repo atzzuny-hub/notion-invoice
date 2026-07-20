@@ -28,10 +28,10 @@ export default function SettingsPage() {
           <CardDescription>
             라이트 · 다크 · 시스템 테마를 선택합니다.
           </CardDescription>
-          <CardContent className="px-0 pt-2">
-            <ThemeToggle />
-          </CardContent>
         </CardHeader>
+        <CardContent>
+          <ThemeToggle />
+        </CardContent>
       </Card>
     </Container>
   )
