@@ -29,7 +29,6 @@ import { Skeleton } from "@/components/ui/skeleton"
 import {
   Tooltip,
   TooltipContent,
-  TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
@@ -63,8 +62,7 @@ function ShowcaseCard({
 
 export function ComponentShowcase() {
   return (
-    <TooltipProvider>
-      <div className="grid gap-4 lg:grid-cols-2">
+    <div className="grid gap-4 lg:grid-cols-2">
         <ShowcaseCard title="Button" description="변형(variant)과 크기(size)">
           <Button>Default</Button>
           <Button variant="secondary">Secondary</Button>
@@ -173,7 +171,6 @@ export function ComponentShowcase() {
             </SheetContent>
           </Sheet>
         </ShowcaseCard>
-      </div>
-    </TooltipProvider>
+    </div>
   )
 }
